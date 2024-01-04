@@ -1,0 +1,78 @@
+.tw-cardArticle{
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tw-cardHeader{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tw-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tw-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.tw-name{
+  font-weight: bold;
+}
+
+.tw-username{
+  color: gray;
+}
+
+.tw-cardAside{
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.tw-button{
+  background: white;
+  border: none;
+  color: #242424;
+  border-radius: 25px;
+
+  & .tw-unfollow{
+    display: none;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  &.is-following{
+    background-color: #181818;
+    border: 0.5px solid #ffffff6b;
+    color: white;
+    width: 140px;
+  
+    &:hover{
+      background-color: rgba(255, 0, 0, 0.099);
+      color: rgb(255, 25, 25);
+      border: 0.5px solid #8c00008f;
+      
+    }
+    &:hover .tw-follow{
+      display: none;
+    }
+    &:hover .tw-unfollow{
+      display: block;
+    }
+  }
+}
+
+
+
